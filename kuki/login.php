@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="dashboard.php" method="POST">
+    <form action="" method="POST">
         <label for="username">username</label><br>
         <input type="text" name="username" placeholder="username"><br>
         <label for="bahasa">pilih bahasa</label>
@@ -24,7 +24,7 @@
             $_SESSION["nama"] = $_POST["username"];
             setcookie("bahasa", $_POST["bahasa"], time() + 60*60*24*30);
             header('Location: /pemweb/kuki/dashboard.php');
-            
+            exit;
         }
     ?>
 </body>

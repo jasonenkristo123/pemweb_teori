@@ -17,8 +17,10 @@
             echo "Welcome back " . $_SESSION["nama"] . " in dashboard page";
         }
     } else {
-        echo "Belum ada session dan cookie";
+        header('Location: /pemweb/kuki/login.php');
+        exit;
     }
+
     ?>
 
     <br>
